@@ -1,0 +1,1295 @@
+/* CSS Document */
+
+
+body{
+	/*font-family:'helvetica_lt_stdregular', Helvetica, Arial, sans-serif;*/
+	/*font-family:Helvetica, Arial, sans-serif;*/
+	background-color:#efefef;
+	color:#666666;
+	font-size:13px !important;
+}
+a{
+	text-decoration:none;
+	color:#666666;
+}
+a:hover{
+	color:#EC1B27;
+}
+.tabla{
+	width:100%;
+	display:table;
+}
+#header{
+	/*background-image:url(../images/fondo%20header.png);*/
+	height:150px;
+	min-width:1044px;
+	position: relative;
+	z-index: 20;
+	margin-bottom: -6px;
+}
+#headerLogos{
+	margin:auto;
+	width:1044px;
+	height:114px;
+	background-image:url(../images/cabezote.png);
+}
+
+#logo{
+	height:90px;
+	width:400px;
+	position:absolute;
+	z-index:20;
+
+}
+
+.left{
+	float:left;
+}
+.right{
+	float:right;
+}
+.escalar{
+	width:960px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#headerContent{
+	height:20px;
+}
+#headerContent #login-form{
+	position:absolute;
+}
+#content{
+	position:relative;
+/*	min-height:500px;*/
+	min-width:960px;
+	background-color: #EFEFEF;
+}
+#contentarea{
+	background-color: #ffffff;
+	min-height:602px;
+}
+
+
+#daviviendapng{
+	top:40px;
+	width:20px;
+	height:122px;
+	background-image:url(../images/davivienda.png) !important;
+	position:absolute;
+	right:0px;
+	z-index:20;
+}
+#avisolegal{
+	width:30px;
+	height:169px;
+	background-image:url(../images/aviso_legal_izq.png) !important;
+	position:absolute;
+	left:0px;
+	top:300px;
+	z-index:20;
+}
+
+#informativa{
+	z-index:999;
+	position:absolute;
+	top:380px;
+	right:0px;
+}
+#informativa .menu{
+	overflow:hidden;
+}
+#informativa li{
+	right:-142px;
+	background-image:url(../images/fondoMenuLateral.png) !important;
+	width:190px;
+	height:42px;
+	margin-bottom:3px;
+	position: relative;
+}
+#informativa li img{
+	margin-top: -14px;
+	margin-left:5px;
+	float:left;
+}
+#informativa li a{
+	padding:15px 0px;
+	display:block;
+}
+#informativa li a:hover{
+	color:#666666;
+}
+
+/**********footer*******************/
+.escalarfooter{
+	width:1024px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#footer{
+	background-image:url(../images/fondo_footer.png);
+	height:212px;
+	min-width:960px;
+	position: relative;
+	z-index: 20;
+	margin-top: -8px;
+}
+#footersup{
+	padding-top:10px;
+	height:90px;
+}
+#footersup img{
+	margin-top:12px;
+	float:left;
+}
+.listaFooter{
+	margin-top:22px;
+	width:440px;
+	height:92px;
+	float:left;
+	font-size:12px;
+}
+.listaFooter h1{
+	color:#EC1B27;
+	margin-bottom:20px;
+}
+
+.listaFooter ul{
+	float:left;
+}
+#footermed{
+	padding-top:42px;
+	height:36px;
+}
+#footermed .menu{
+	margin-top:4px;
+	font-size:11px;
+}
+#footermed .menu li{
+	padding-left:10px;
+	padding-right:10px;
+	float:left;
+	border-right:solid 1px white;
+}
+#footermed .menu .item-125{
+	border-right:none;
+}
+#footermed .menu li a{
+	color:white;
+	text-decoration:none;
+}
+#footerbottom{
+	color:white;
+	font-size:11px;
+	height:19px;
+	padding-top:16px;
+	color:#9A9A9A;
+}
+#footerbottom img{
+	margin-top:-3px;
+}
+
+
+
+span.glosarioTooltip{
+	cursor:help;
+	position:relative;
+	color:#F60;
+}
+.tooltipG {
+	width:250px;
+	position: absolute;
+	padding: 10px 13px;
+	z-index: 2;
+	color: #303030;
+	background-color: #F5F5B5;
+	border: 1px solid #DECA7E;
+	font-family: sans-serif;
+	font-size: 10px;
+	line-height: 18px;
+	text-align: justify;
+}
+.tooltipG h3 ,.tooltipG p{
+	margin:0 !important;
+	padding:0;
+}
+/*******************LOGIN***************/
+#login{
+	font-family: 'helvetica_lt_stdbold', Helvetica, Arial, sans-serif;
+	width:222px;
+	height:28px;
+	margin-top: -8px;
+	text-align:right;
+	padding-top: 6px;
+	padding-right:14px;
+	color:#FFF;
+	font-size:18px;
+	margin-right:-2px;
+}
+#login a{
+	color:#FFF;
+	text-decoration:none;
+}
+#login a:hover{
+	color:#510A0E;
+}
+.botonInscribirmeEntrar{
+	background-image:url(../images/botonInscribirme.png);
+}
+.botonInscribirmeEntrarYaEntro{
+	background-image:url(../images/botonInscribirmeEntro.png);
+}
+/*********************MENU**********************/
+#menutop{
+       font-size:13px;
+}
+#menutop a{
+       text-decoration:none;
+	   color:#777777;
+}
+#menutop a:hover{
+	   color:#ED1C28;
+}
+#menutop > li{
+       float:left;
+	    background-image:url(../images/divisorMenu.png);
+	   background-position:right;
+	   background-repeat:no-repeat;
+       position:relative;
+}
+#menutop > li >a{
+		
+       padding:10px 15px 16px 10px;
+       display:block;
+}
+
+#menutop ul{
+	   font-size:13px;
+       display:none;
+       position:absolute;
+       z-index:99;
+       padding:0 0px;
+       width:100%;
+}
+	   
+.final{
+	height:18px;
+	background-image: url(../images/borderRoundIzqSubmenu.png), url(../images/borderRoundDerSubmenu.png);
+	background-repeat: no-repeat, no-repeat;
+	background-position: 1px -7px, right -7px;	   
+}
+.final .finalIntermendio{
+	height:18px;
+	margin:0px 24px;
+	background-image:url(../images/bordeInfSubMenu.png);
+	background-repeat:repeat-x;
+	background-position:0px 0px;
+}
+#menutop ul li{
+       display:block;
+	   padding:0px 10px;
+	   background-image:url(../images/bordeIzqSubMenu.png), url(../images/bordeDerSubMenu.png);
+	   background-position:left, right;
+	   background-repeat:repeat-y, repeat-y;
+}
+#menutop ul li a{
+	   background-color:#FCFCFC;
+       padding: 10px 0px;
+	   margin: 0px 8px;
+       display:block;
+       border-bottom:#ebebeb 1px solid;
+}
+.item-147 a,.item-150 a,.item-140 a{
+	border-bottom:none !important;
+	padding-bottom:0px !important;
+}
+/*****************GLOSARIO****************/
+input{
+	font-family: 'helvetica_lt_stdregular';
+	color:#666666;
+	font-size:14px;
+	border:none;
+	outline:none;
+	margin-left:10px;
+	background-color:transparent !important;
+}
+.fondoGlosario{
+	background-image:url(../images/fondos/perfil.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+#buscar{
+	width:202px;
+	height:29px;
+	background-image:url(../images/fondoFormaBuscar.png);
+	float:left;		
+}
+#buscar input{
+	margin-left: 28px;
+	margin-top: 5px;
+	width:165px;
+	font-family: 'helvetica_lt_stdbold';
+	font-style:italic;
+}
+#conteBuscador{
+float: right;
+margin-right: 180px;
+margin-top: 30px;
+}
+#bontonBuscar{
+	height:29px;
+	width:32px;
+	background-image:url(../images/botonBuscador.png);
+	float:left;	
+}
+#bontonBuscar:Hover{
+	cursor:pointer;
+	background-image:url(../images/botonBuscadorHover.png);
+}
+#botonLimpiar{
+	background-image:url(../images/botonLimpiar.png);
+	width:76px;
+	height:19px;
+	float:left;
+	text-align:center;
+	color:#FFF;
+	font-size:14px;
+	font-family: 'helvetica_lt_stdbold';
+	padding:5px 0px;
+}
+#botonLimpiar:hover{
+	background-image:url(../images/botonLimpiarHover.png);
+	color:#510A0E;
+	cursor:pointer;
+}
+#glosario{
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:60px;
+	width:785px;
+}
+.tituloNaranja{
+	background-image:url(../images/fondoTituloNaranja.png);
+}
+.titulo{
+	height:166px;
+}
+.titulo h1{
+	color:#FFF;
+	padding-top:37px;
+}
+.titulo h1 .parteUno{
+	font-size:23px;
+	font-family: 'helveticaneuelt_pro_47_ltcnRg';	
+}
+.titulo h1 .parteDos{
+	font-family: 'helveticaneuelt_pro_57_cnbold';
+	font-size:26px;
+}
+.explicacionGlosario{
+	background-image:url(../images/listaCursosHover.png);
+	background-repeat:no-repeat;
+	margin: 0px 58px 15px 135px;
+	padding:2px 0px 0px 15px;
+}
+.tituloDiccionario{
+	margin-top: -31px;
+	margin-left: -51px;
+	float: left;
+	padding-left: 17px;
+	width: 149px;
+}
+#glosario .header{
+	background-image:url(../images/background/glosario/head.png);
+	height:37px;
+	width:785px;	
+}
+#glosario .centro{
+	background-image:url(../images/background/glosario/centro.png);
+	background-repeat:repeat-y;
+}
+#conteGosario{
+	width:676px;
+	margin:auto;
+}
+#conteGosario .header{
+	background-image:url(../images/background/glosario/headBlanco.png);
+	height:29px;
+	width:676px;	
+}
+#conteGosario .centro{
+	background-image:url(../images/background/glosario/centroBlanco.png);
+	width:676px;
+	min-height:433px;	
+}
+#conteGosario .centro h1{
+	border-bottom:solid 1px #CCCCCC;
+	margin:0px 42px 10px 54px;
+	padding-bottom:5px;
+}
+#conteGosario .centro h1 a{
+	padding:0px 6px;
+	font-family: 'helvetica_lt_stdbold';
+	text-align:center;
+	font-size:12px;
+}
+#conteGosario .centro h1 .noHay{
+	padding:0px 6px;
+	font-family: 'helvetica_lt_stdbold';
+	text-align:center;
+	font-size:12px;
+	color:#CCCCCC;
+}
+#itemsGlosario{
+	padding:0px 100px;
+}
+#itemsGlosario h3{
+	color:#ED1C28;
+	font-size:14px;
+	background-image:url(../images/nombreGlosario.png);
+	background-repeat:no-repeat;
+	padding-left:10px;
+	margin-bottom:10px;
+}
+#itemsGlosario p{
+	padding-bottom:25px;
+	padding-left:30px;
+}
+#paginacion{
+	text-align:center;
+	padding-bottom:20px;
+	font-size:14px;	
+}
+.pagenav{
+	padding:0px 4px;
+}
+
+
+
+#pagPrev span , #pagNext span,#pagPrev a , #pagNext a{
+	background-repeat:no-repeat;
+	padding:0px 6px !important;
+	background-position:center;
+	text-indent:-9999px; 
+	display:inline-block;
+}
+#pagPrev span{
+	background-image:url(../images/paginacionAnteriorGris.png);
+}
+#pagNext span{
+	background-image:url(../images/paginacionSiguienteGris.png);
+}
+#pagPrev a{
+	background-image:url(../images/paginacionAnterior.png);
+}
+#pagNext a{
+	background-image:url(../images/paginacionSiguiente.png);
+}
+#paginacion span{
+	color:#999999;	
+}
+#itemsPag span{
+	color:#ED1C28;
+	font-size:16px;
+}
+
+
+
+
+#resultadosEncontrados{
+	margin-bottom:20px;
+	margin-top:20px;
+	font-size:14px;
+	font-family: 'helvetica_lt_stdbold';
+	background-image:url(../images/listaCursosHover.png);
+	background-repeat:no-repeat;
+	padding-left:14px;
+}
+
+.selectedLetter{
+	background-image:url(../images/selectedGlosario.png);
+	font-size:18px !important;
+	padding:5px 11px !important;
+	color:#ED1C28 !important;
+	text-decoration:none !important;
+	
+}
+.highlighted {
+	color: #ffffff;
+	background-color: #666666;
+	padding:0px 2px;
+}
+.noEncontroBusqueda{
+	font-family: 'helvetica_lt_stdbold';
+	color:#ED1C28;
+	text-align:center;
+	font-size:16px;
+}
+
+/*navegacion*/
+#navegacion{
+	width:100%;
+	background-image:url(../images/fondoNavegacion.png);
+	background-repeat: repeat-x;
+	height: 80px;
+/*	position:absolute;
+	z-index:3;*/
+}
+#navegacion #contenedorNav{
+	padding-top: 10px;
+	/*margin-right: auto;
+	margin-left: auto;
+	width: 1224px;*/
+	/*margin-left: -612px;
+	left: 50%;
+	position: absolute;
+	width: 1224px;*/
+}
+#navegacion #contenedorNav #barraNav {
+	height:30px;
+	padding-top:1px;
+	position:relative;
+	background-image:url(../images/barra.png);
+	margin-top:9px;
+}
+#navegacion #contenedorNav #fondoIzq {
+	background-image:url(../images/esq_izq.png);
+}
+#navegacion #contenedorNav #fondoDer {
+	background-image:url(../images/esq_der.png);
+}
+#navegacion #contenedorNav .bordeBarra{
+	width:18px;
+	height:30px;
+	margin-top:9px;
+}
+
+#navegacion #contenedorNav #barraNav .botonSeccion {
+	float:left;
+	width:26px;
+	height:22px;
+	cursor:pointer;
+	background-repeat:no-repeat;
+	background-position:center;
+	position:relative;
+	
+}
+#navegacion #contenedorNav #barraNav .tooltip {
+	position: absolute;
+	z-index: 2;
+}
+#navegacion #contenedorNav #barraNav .botonSeccion:hover {
+	background-image:url(../images/btn_over.png);
+}
+
+#navegacion #contenedorNav #barraNav .botonNonSelected {
+	background-image:url(../images/btn_activo.png);
+}
+
+#navegacion #contenedorNav #barraNav .botonSelected {
+	background-image:url(../images/btn_over.png);
+}
+#botonExploraPerfil{
+	background-image:url(../images/botonExploraPerfil.png);
+	width:132px;
+	height:31px;
+	display:inline-block;
+	margin-top:-20px;
+	position:relative;
+	z-index:999;
+	margin-left:30px;
+	color: #ED1C28;
+	font-size:16px;
+	padding:13px 30px;
+}
+#botonExploraPerfil:hover{
+	background-image:url(../images/botonExploraPerfilHover.png);
+	color:#BA1721;
+	cursor:pointer;
+}
+#tituloRecorraCasa{
+	text-align:right;
+	font-size:15px;
+	float:right;
+	background-image:url(../images/iconoRecorraCasa.png);
+	background-repeat:no-repeat;
+	background-position:right;
+	padding-right:25px;
+	margin-right:15px;
+	margin-top:5px;
+}
+
+/*BIENVENIDA*/
+
+.fondoBienvenida{
+	background-image:url(../images/fondos/bienvenida.jpg);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	min-height:603px;
+}
+#contentRayado{
+	margin-left:auto;
+	margin-right:auto;
+	width:449px;
+}
+#contentRayado #contenido{
+	background-image:url(../images/background/rayado/contenidoCentral.png);
+	background-repeat:repeat-y;
+	text-align:center;
+}
+#contentRayado #footerRayado{
+	background-image:url(../images/background/rayado/footer.png);
+	height:36px;
+	background-repeat:no-repeat;
+}
+#ajustaRayado{
+	height:3px;	
+}
+h1#tituloBienvenida{
+	width:369px;
+	height:105px;
+	background-image:url(../images/fondoTituloGrande.png);
+	color:#FFF;
+	font-family: 'helveticaneuelt_pro_57_cnbold';
+	font-size:35px;
+	padding-left:80px;
+	padding-top:15px;
+	text-align:left;
+	margin-bottom:25px;
+}
+#contentRayado #contenido h1 .otraFont{
+	font-family: 'helveticaneuelt_pro_47_ltcnRg';
+	font-size:22px;
+}
+#contentRayado #contenido{
+	font-size:16px;
+}
+#contentRayado #contenido strong{
+	font-size:18px;
+	font-family: 'helvetica_lt_stdbold';
+}
+#conteInfo{
+	width:390px;
+	margin:auto;
+	padding-top:10px;
+}
+#conteInfo .header{
+	background-image:url(../images/background/bordeCuadrado/header.png);
+	height:18px;
+}
+#conteInfo .footer{
+	background-image:url(../images/background/bordeCuadrado/footer.png);
+	height:18px;
+	position:relative;
+	z-index:2;
+}
+#conteInfo .centro{
+	background-image:url(../images/background/bordeCuadrado/centro.png);
+	/*position:relative;
+	z-index:3;*/
+}
+#botonRojo{
+	height:31px;
+	width:220px;
+	color:#FFFFFF;
+	font-family: 'helveticaneuelt_pro_57_cnbold';
+	font-size:17px;
+	background-image:url(../images/botonRojo.png);
+	margin:auto;
+	text-align:left;
+	padding-top:9px;
+	padding-left:30px;
+	margin-top:20px;
+}
+a:hover #botonRojo{
+	background-image:url(../images/botonRojoHover.png);
+
+}
+a .selectGris{
+	background-image:url(../images/botonGrisSelect.png) !important;
+
+}
+
+.botonContinuar{
+	background-image:url(../images/botonContinuar.png);
+	width:123px;
+	height:25px;
+	float:right;
+	margin-top:-14px;
+	margin-right:5px;
+	position:relative;
+	color:#FFF;
+	font-size:16px;
+	font-family: 'helvetica_lt_stdbold';
+	padding-top:15px;
+	text-align:center;
+}
+
+a:hover .botonContinuar{
+	background-image:url(../images/botonContinuarHover.png);
+	color:#510A0E;
+}
+.infoContinuar{
+	font-size:16px;
+	text-align:left;
+	padding-top:18px;
+}
+.infoContinuar img{
+	float:left;
+	margin-left:51px;
+	margin-right:5px;
+}
+.fondoGrisDegradado{
+	background-image:url(../images/fondoFooterTablaMisCursos.png);
+	background-repeat:no-repeat;
+	background-position:center top;
+	min-height:41px;
+}
+.infoNuestrosCursos{
+	width:307px;
+	margin:auto;
+	text-align:left;
+	font-size:13px;
+}
+.login-fields input{
+	-webkit-appearance:none;
+	width:245px;
+}
+.login-fields{
+	background-image:url(../images/fondoFormulario.png);
+	width:265px;
+	height:25px;
+	padding-top:5px;
+	margin-bottom:15px;	
+}
+a#inscrito{
+	color:#EC1B27 !important;
+}
+a:hover#inscrito{
+	color:#666666 !important;
+	background-image:url(../images/listaCursos.png);
+}
+#inscrito{
+	display:block;
+	background-image:url(../images/listaCursosHover.png);
+	background-repeat:no-repeat;
+	height:13px;
+	padding-top:2px;
+	padding-left:15px;
+	margin-top:15px;
+	font-weight:bold;
+}
+#conteInfo .fb-login-button{
+	margin-top:29px;
+}
+/*******REGISTRO***********/
+#topRegistro{
+	padding-bottom:15px;	
+	background-image:url(../images/simboloDavivienda.png);
+	background-repeat:no-repeat;
+	padding-left:12px;
+	font-size:13px;
+	padding-top:1px;	
+}
+/*********REGISTRO COMPLETO********/
+.fondoMensajeSatisfactorio{
+	background-image:url(../images/fondoRegistroSatisfactorio.png);
+	background-repeat:no-repeat;
+	background-position:bottom;	
+}
+.tituloRegistroSatisfactorio{
+	text-align:left;
+	padding-top:30px;
+	margin-left:-50px;
+	padding-left:24px;
+	width:140px;
+	background-repeat:no-repeat;
+	background-position:bottom;
+}
+h1.tituloInscribirse{
+	text-align:left;
+	color:#EB1926;
+	font-size:22px;
+	margin-bottom:13px;
+}
+.tituloRojo{
+	background-image:url(../images/fondoTituloRojo.png);
+}
+#fotoInternaRegistroSatisfactorio{
+	float:left;
+	margin-top:-58px;
+	position:relative;
+	z-index:10;
+}
+/**MENSAJE RESET CLAVE**/
+#mensajeClaveOlvido{
+	padding-bottom:15px;	
+	background-image:url(../images/iconoDaviviendaClave.png);
+	background-repeat:no-repeat;
+	padding-left:24px;
+	font-size:13px;
+}
+.mensajeOlvidoClave{
+	font-size:23px !important;
+	color:#EC1B27 !important;
+}
+.resaltarClave{
+	font-size:16px;
+	color:#333333;
+}
+
+/*SCROLL*/
+ul#misCursos{
+	margin-top:14px;
+	padding-bottom:9px;	
+}
+ul#misCursos input{
+	margin:0px 5px 0px 0px;
+}
+#misCursos li{
+	padding: 15px 0px 4px 0px;
+	border-bottom:dotted 2px #ebebeb;
+}
+#misCursos li a{
+	background-image:url(../images/listaCursos.png);
+	background-repeat:no-repeat;
+	/*background-position:0px 14px;*/
+	padding-left:18px;	
+}
+#misCursos li a:hover{
+	background-image:url(../images/listaCursosHover.png);
+}
+ul#misCursosAgregar input{
+	margin:0px 5px 0px 0px;
+}
+#misCursosAgregar li{
+	background-image:url(../images/listaCursosHover.png);
+	background-repeat:no-repeat;
+	/*background-position:0px 14px;*/
+	padding: 0px 0px 4px 18px;
+	border-bottom:dotted 2px #ebebeb;
+	margin-top:10px;
+	font-size:16px;	
+}
+#todosCursos{
+	margin-top:7px;
+	padding-bottom:9px;
+}
+#todosCursos input{
+	margin:0px 5px 0px 0px;
+}
+ul.cursito{
+	padding-left:19px;
+	display:none;
+}
+ul.cursitoAgregar{
+	
+}
+.cursito li{
+	border-bottom:none !important;
+	background-image:none !important;
+}
+.cursitoAgregar li{
+	border-bottom:none !important;
+	background-image:none !important;
+	font-size:13px !important;	
+}
+/******PERFIL**********/
+#donut{
+	width: 153px; height: 153px;
+	background-image:url(../images/pieChar.png);
+	position:relative;
+	overflow:hidden;
+}
+#donutCenter{
+	width: 153px; height: 153px;
+	background-image:url(../images/pieCharCentro.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	position:absolute;
+	z-index:5;
+	top:-2px;
+	left:-3px;
+}
+
+
+.fondoPerfil{
+	background-image:url(../images/fondos/perfil.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+}
+
+#perfil{
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:47px;
+	width:835px;
+}
+
+#perfil .header{
+	background-image:url(../images/background/perfil/head.png);
+	height:31px;
+	width:835px;	
+}
+#perfil .centro{
+	background-image:url(../images/background/perfil/centro.png);
+	background-repeat:repeat-y;
+}
+.tituloPerfil{
+	margin-top:-31px;
+	margin-left:-26px;
+	float:left;
+	padding-left:55px;
+	width:110px;
+}
+#nombrePerfil{
+	float:left;
+	margin-left:30px;
+	margin-top:8px;
+}
+#nombrePerfil h1{
+	float:left;
+	margin-left:10px;
+	margin-top:6px;
+	color:#ED1C28;
+	height: 81px;
+	min-width:150px;
+	background-image:url(../images/separadorNombre.png);
+	background-repeat:no-repeat;
+	background-position:bottom left;
+}
+#fotoPerfil{
+	width:86px;
+	height:86px;
+	background-position:center;
+	background-repeat:no-repeat;
+	float:left;
+	position:relative;
+}
+#nombrePerfil h1 .parteUno{
+	font-size:35px;
+	font-family: 'helveticaneuelt_pro_47_ltcnRg';	
+}
+#nombrePerfil h1 .parteDos{
+	font-family: 'helveticaneuelt_pro_57_cnbold';
+	font-size:35px;
+}
+.wrapPerfil{
+	margin-top:18px;
+}
+.wrapPerfilIzq{
+	width:408px;
+	float:left;
+	margin-left: 25px;
+}
+.wrapPerfilDer{
+	width:331px;
+	float:right;
+	margin-right: 35px;
+}
+.wrapPerfil h1{
+	margin-bottom:22px;
+	font-style:oblique;
+	font-size:16px;
+	padding-bottom:10px;
+	border-bottom:dotted #CACACA 2px;
+	color:#ED1C28;
+}
+#imgHerramientas{
+	margin-bottom:10px;
+	min-height:96px;
+}
+#imgHerramientas img{
+	float:left;
+	margin-left: 7px;
+}
+.divide{
+	width:100%;
+	float:left;	
+}
+#textoCursoAprobado, #imgProcentaje, #textoCursoNoAprobado{
+	float:left;
+	margin-left:8px;
+	color:#999999;
+}
+#textoCursoAprobado{
+	width:77px;
+	margin-top:38px;
+}
+#imgProcentaje{
+	width:153px;
+	min-height:186px;
+}
+#textoCursoNoAprobado{
+	width:77px;
+	font-size:13px;
+}
+#textoCursoAprobado .parteUno{
+	font-size:17px;
+	
+	
+}
+#textoCursoAprobado .parteDos{
+	font-size:38px;
+	font-family: 'helveticaneuelt_pro_57_cnbold';
+	color:#000000;
+}
+#textoCursoNoAprobado .parteUno{
+	font-size:17px;
+	
+}
+#textoCursoNoAprobado .parteDos{
+	font-size:35px;
+	font-family: 'helveticaneuelt_pro_57_cnbold';
+	color:#000000;
+}
+#botonActualizar{
+	height: 22px;
+	color: #ED1C28;
+	font-weight: bold;
+	font-style: oblique;
+	padding: 8px 8px;
+	margin: auto;
+	width: 145px;
+	background-image: url(../images/BotonActualizarDatos.png);
+}
+#botonActualizar:hover{
+	background-image: url(../images/BotonActualizarDatosHover.png);
+	color:#BF151F;
+}
+.descripcion{
+	background-image:url(../images/simboloDavivienda.png);
+	background-repeat:no-repeat;
+	padding-left:12px;
+	color:#999999;
+	font-size:13px;
+	margin-top:27px;
+	margin-bottom:13px;
+	margin-left:16px;	
+}
+#misCursosPerfil{
+	width:399px;
+	margin:auto;
+	margin-bottom: 15px;
+}
+#headerMisCursos{
+	background-image:url(../images/bordeSuperiorPerfilCurso.png);
+	height:26px;	
+}
+#footerMisCursos{
+	background-image:url(../images/bordeInferiorPerfilCurso.png);
+	height:26px;	
+}
+#articleMisCursos{
+	background-image:url(../images/fondoPerfilCurso.png);
+	padding:0px 20px;
+}
+#headerMisCursosTabla{
+	margin:0px;
+	padding:0px 0px 5px 0px;
+	color:#666666;
+	border-bottom:dotted #CACACA 2px;
+	margin-bottom: 18px;
+	font-family: 'helvetica_lt_stdbold';
+	font-size:16px;
+}
+#articleMisCursos ul li{
+	float:left;
+}
+.fondoGrisTabla{
+	background-image:url(../images/fondoTablaCursoPerfil.png);	
+}
+.cursoTabla{
+	height:30px;	
+}
+.cursoTabla li{
+	padding-top:9px;
+}
+.cursoTabla li a{
+	color:#666666;
+	text-decoration:none;
+}
+.cursoTabla li a:hover{
+	color:#EC1B27;
+}
+.cursoTabla li img{
+	float:left;
+	margin-top: -3px;
+	margin-left: 5px;
+	margin-right: 8px;
+}
+.margenDerechaMiCurso{
+	width: 188px;
+}
+.margenDerechaMiCursoDuracion{
+	width: 106px;
+}
+ul.cursoTabla li.nombre{
+	color:#666666 !important;
+	font-size:13px;
+	background-image:url(../images/listStyleMiCurso.png);
+	background-repeat:no-repeat;
+	background-position: 5px 6px;
+	padding-left:25px;
+	width:163px;
+	padding-bottom: 1px;
+}
+ul.cursoTabla li.nombre:hover{
+	color:#EC1B27 !important;
+	background-image:url(../images/listStyleMiCursoHover.png);
+}
+ul.cursoTabla li.tiempo{
+	color:#0083C5 !important;
+	font-size:15px;
+	font-family: 'helvetica_lt_std_lightregular';
+}
+#agregarCurso{
+	background-image:url(../images/agregarCurso.png);
+	background-repeat:no-repeat;
+	height:21px;
+	padding: 5px 29px;
+	margin-left:4px;
+	margin-top:20px;
+}
+#footerTablaMisCursos{
+	font-family: 'helvetica_lt_stdbold';
+	font-size:12px;
+	text-align:center;
+	color:#999999;
+	background-image:url(../images/fondoFooterTablaMisCursos.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	width:372px;
+	min-height: 25px;
+	padding-top:15px;
+	margin:auto;
+}
+#fotoPerfil #marcoFoto{
+	left: -3px;
+	top: -3px;
+	position:absolute;
+	z-index:2;
+	width:86px;
+	height:86px;
+	background-image:url(../images/marcoFotoPerfil.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+/*****mis datos********/
+.tituloMisDatos{
+	margin-top: -31px;
+	margin-left: -51px;
+	float: left;
+	padding-left: 27px;
+	width: 138px;s
+}
+#headMisDatos{
+	height:86px;
+	padding-left: 70px;	
+}
+#cambiarContra{
+	width:101px;
+	height:34px;
+	background-image:url(../images/botonCambiarContrasena.png);
+	float:right;
+	margin-left:5px;
+	text-align:right;
+	padding-right:35px;
+	padding-top:9px;
+	color:#ED1C28;
+	margin-top:25px;
+}
+#cambiarContra:hover{
+	color:#BF151F;
+	background-image:url(../images/botonCambiarContrasenaHover.png);
+}
+#datosPersonales h1{
+	 font-family: 'helvetica_lt_stdbold';
+	 font-size:21px;
+	 border-bottom:dashed 1px #999999 !important;
+	 color:#878787;
+	 margin: 0px 42px 10px 0px !important;
+}
+#datosPersonales label{
+	margin-bottom:10px !important;
+	display:block !important;
+}
+#editarImagen{
+	width:98px;
+	height:17px;
+	background-image:url(../images/botonEditarImagen.png);
+	z-index: 2;
+	position:absolute;
+	top:77px;
+	left:-7px;
+	text-align:center;
+	color:#ED1C28;
+	padding-top:9px;
+	font-size:12px;
+}
+.datospersonalesCambiarContra {
+margin-left: 140px ;
+margin-right: 64px;
+}
+.datosPersonales{
+	margin-left:180px;
+	margin-right:30px;
+}
+.resaltarClave{
+	font-size:16px;
+	color:#333333;
+}
+#botonGuardarMisDatos{
+	float:right;
+}
+#conteBotonGuardarDatos{
+	height:111px;
+	width:377px;
+	background-image:url(../images/fondoBotonGuardarMisDatos.png);
+	background-position:center;
+	background-repeat:no-repeat;
+	padding-top:30px;	
+}
+.botonAgregarGuardar{
+	background-image:url(../images/botonAgregarCurso.png);
+	width:129px;
+	height:20px;
+	text-align:center;
+	padding:7px 0px;
+	color:#FFF;
+	font-size:14px;
+	font-family: 'helvetica_lt_stdbold';
+}
+#preloadFoto{
+	left: 0px;
+	background-image: url(../images/ajaxLoader.gif);
+	background-position:center;
+	background-repeat:no-repeat;
+	background-color:white;
+	top: 0px;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	display:none;
+}
+/**************ERROR***************/
+#system-message{
+	font-size: 13px;
+	padding-left: 34px;
+	text-align: left;
+	color:#EC1B27;
+/*	font-weight:bold;*/
+}
+#system-message .message{
+	width:380px;
+
+}
+#system-message dt{
+	display:none;
+}
+
+#system-message .message li{
+	padding: 3px 0px;
+	list-style: circle;
+}
+
