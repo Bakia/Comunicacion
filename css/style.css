@@ -64,11 +64,9 @@ img{
 }
 
 .curso #izquierda{
-	background-image:url(../imagenes/permanente/flecha-izq.png);
 	left:-3px;
 }
 .curso #derecha{
-	background-image:url(../imagenes/permanente/flecha-der.png);
 	left:910px;
 }
 
@@ -1481,7 +1479,7 @@ margin-right: 64px;
 }
 
 .textBox{
-	background-image:url(imagenes/comunicacion/belcorp-comunicacion_8-4.png);
+	background-image:url(../img/modulos/comunicacion/belcorp-comunicacion_8-4.png);
 }
 .resultadoMercado, .resultadoMercadoOrganizado{
 	left: 126px; 
@@ -1569,7 +1567,7 @@ margin-right: 64px;
 }
 
 .deQuien , .paraQuien{
-	background-image:url(imagenes/comunicacion2/comunicacion-tablero-2/belcorp-comunicacion2_13-7.png);
+	background-image:url(../img/modulos/comunicacion2/comunicacion-tablero-2/belcorp-comunicacion2_13-7.png);
 	width:462px;
 	height:30px;
 }
@@ -1583,7 +1581,7 @@ margin-right: 64px;
 }
 
 textarea{
-	background-image:url(imagenes/fondo_textArea.png);
+	background-image:url(../img/modulos/fondo_textArea.png);
 	border:0;
 	border-radius:15px;
 }
@@ -1618,14 +1616,14 @@ textarea{
 /******* Sopa De Letras *********/
 
 .fondoletra{
-	background-image:url(imagenes/sopaletras/letra.png);
+	background-image:url(../img/modulos/sopaletras/letra.png);
 }
 .fondoletra:hover{
-	background-image:url(imagenes/sopaletras/letraH.png);
+	background-image:url(../img/modulos/sopaletras/letraH.png);
 }
 
 .fondoletraselect{
-	background-image:url(imagenes/sopaletras/letraS.png);
+	background-image:url(../img/modulos/sopaletras/letraS.png);
 }
 
 .letra{
@@ -1646,12 +1644,12 @@ textarea{
 	color:#000;
 }
 .checkbox{
-	background-image:url(imagenes/sopaletras/checkbox.png);
+	background-image:url(../img/modulos/sopaletras/checkbox.png);
 	width:21px;
 	height:21px;	
 }
 .checkboxs{
-	background-image:url(imagenes/sopaletras/checkboxs.png);
+	background-image:url(../img/modulos/sopaletras/checkboxs.png);
 	width:21px;
 	height:21px;	
 }
@@ -1687,7 +1685,7 @@ textarea{
 }
 
 .confCorreo{
-	background-image:url(imagenes/enviarCorreo/caja_texto.png);
+	background-image:url(../img/modulos/enviarCorreo/caja_texto.png);
 	width:440px;
 	height:50px; 
 }
