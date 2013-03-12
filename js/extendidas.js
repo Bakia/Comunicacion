@@ -10,6 +10,11 @@ arregloLogicaMensaje = [1];
 arregloProductos = [];
 arregloProductosOrganizado = [];
 
+var arreglo3info = [];
+var arregloInfo = [];
+var arregloTablero = [];
+
+
 var contadorProductosDesOrganizados = 0;
 var contadorProductosOrganizados = 0;
 var contenidoTextArea1 = "";
@@ -1578,9 +1583,7 @@ function animaciones(){
 }
 
 
-function init(){
-	$("#derecha").css("top","600px");
-	$("#izquierda").css("top","600px");
+/*function init(){
 	var slides = $(".seccion");
 	slides.each(function(index, element) {
 		if(index<currentIndex){
@@ -1589,7 +1592,7 @@ function init(){
 		$(this).css("opacity",0);
 	});
 	//TweenLite.from( $("#footerLCBU"), 1, {css:{top:"800"}, ease:Expo.easeInOut});
-}
+}*/
 
 function audios(cual){
 	currentAudio=cual+"";

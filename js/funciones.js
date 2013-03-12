@@ -91,6 +91,8 @@ function iniciar(){
 		//}
 		
 	});
+
+	SeccionesSlider();
 	
 	/*		FIN FUNCIONES INLINE			*/
 
