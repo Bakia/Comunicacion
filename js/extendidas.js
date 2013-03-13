@@ -1623,13 +1623,7 @@ function terminoaudio(){
 /*************************************/
 
 /***** Show Seccion ******/
-function showSeccion(index){
-	  
-	  
-	  TweenLite.to( slides.eq(currentIndex),0.7, {css:{left:index > currentIndex ? -960 : 960,opacity:0}, ease:Circ.easeInOut});
-	  currentIndex=index;
-	  if (currentIndex < 0) currentIndex = slides.length - 1;
-	  else if (currentIndex >= slides.length) currentIndex = 0;
+function act_showSeccion(){
 	  
 	  if(direccion == "der"){
 		  if(slides.eq(currentIndex).attr("id") == "mostrarPrimerEscenario"){
@@ -1655,60 +1649,6 @@ function showSeccion(index){
 	  }
 	  
 	  
-	  
-	  TweenLite.to( slides.eq(currentIndex),0.7, {css:{left:0,opacity:1}, ease:Circ.easeInOut});		
-	  $(slides.eq(currentIndex)).trigger('animar', []);
-	  
-	  //slides.eq(currentIndex).find(".textoLargo").fadeIn(10); ease:Expo.easeOut	ease:Back.easeOut
-	  var tl = new TimelineMax({repeat:0, yoyo:false,align:"start"});
-	  tl.append(TweenMax.staggerFrom(slides.eq(currentIndex).find(".textoLargo"),35,{css:{height:0, opacity:1}, ease:Back.easeOut}, 25));
-	  
-	  //slides.eq(currentIndex).find(".textoLargo").show(3000);
-	  
-	  var dataAudio = slides.eq(currentIndex).data("audio");
-	  if(dataAudio != "" && dataAudio !=undefined){
-		  stopSong();
-		  audios(dataAudio);
-	  }
-				
-
-	  if (currentIndex < 0) {
-		  $('#izquierda').fadeOut(10);
-	  }
-	  
-	  if (currentIndex >= slides.length) {
-		  $('#derecha').fadeOut(10);
-	  }
-	  
-	  if(slides.eq(currentIndex).is('.noMostrarFlechas')){
-		  $('#derecha').fadeOut(10);
-		  $('#izquierda').fadeOut(10);
-	  }else{
-		  if(slides.eq(currentIndex).is('.noMostrarFlechaIzq')){
-			  $('#izquierda').fadeOut(10);
-			  
-		  }else{
-			  $('#izquierda').fadeOut("slow");
-			  $.timer(2000,function(e){
-				  $('#izquierda').fadeIn("slow");
-			  e.stop();
-			  })
-		  }
-		  
-		  if(slides.eq(currentIndex).is('.noMostrarFlechaDer')){
-			  $('#derecha').fadeOut(10);
-					  
-		  }else{
-			  $('#derecha').fadeOut(10);
-			  $.timer(2000,function(e){
-				  $('#derecha').fadeIn("slow");
-			  e.stop();
-			  })
-			  
-		  }
-	  }
-	  
-	  
 	  var idAnterior= slides.eq(currentIndex-1).attr("id");
 	  var idSiguiente= slides.eq(currentIndex+1).attr("id");
 
@@ -1729,8 +1669,6 @@ function SeccionesSlider(){
 	slides = $(".seccion");
 	mensaje = "";
 	direccion = "";
-	
-	showSeccion(currentIndex);
 
 	stopSong();
     audios('01_yo_soy_ricardo');
@@ -1746,7 +1684,7 @@ function SeccionesSlider(){
 		$(this).fadeOut("fast"); 
     });
 	
-	$("#derecha").mousedown(function(e) {
+	/*$("#derecha").mousedown(function(e) {
 		direccion = "der";	
 		showSeccion(currentIndex+1); 
 		
@@ -1760,7 +1698,7 @@ function SeccionesSlider(){
 	
 	$(".terminarActividadTablero").click(function(e) {
 	   showSeccion(currentIndex+1);
-	});
+	});*/
 	
 	$(".cerrarShadow").click(function(e) {
 	   

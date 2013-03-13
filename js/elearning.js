@@ -21,17 +21,21 @@ var currentIndex=0;
 		methods.showSeccion(currentIndex);
 		$("#derecha").click(function(e) {		
 			methods.showSeccion(currentIndex+1); 
+			direccion = "der";	
 		});	
 		$("#izquierda").click(function(e) {		
 			methods.showSeccion(currentIndex-1); 
+			direccion = "izq";	
 		});
 		
 		$(".siguiente-diapositiva").click(function(e) {		
 			methods.showSeccion(currentIndex+1); 
+			direccion = "der";	
 		});
 		
 		$(".anterior-diapositiva").click(function(e) {		
 			methods.showSeccion(currentIndex-1); 
+			direccion = "izq";	
 		});	
 		$(".ir-a-diapositiva").click(function(e) {	
 			var dataId = $(this).data("iddediapositiva");
@@ -95,6 +99,12 @@ var currentIndex=0;
 			},onCompleteParams:[slides.eq(currentIndex)]
 			});
 		currentIndex=index;
+		
+		
+		/*******/
+		act_showSeccion();
+		/******/
+		
 		
 		if (currentIndex < 0) currentIndex = slides.length - 1;
         else if (currentIndex >= slides.length) currentIndex = 0;
@@ -163,6 +173,8 @@ var currentIndex=0;
 		if (currentIndex == 0){
 			$('#izquierda').fadeOut("fast");
 		}
+		
+		
 		
     }
 

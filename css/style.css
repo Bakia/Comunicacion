@@ -32,7 +32,14 @@ img{
 	}
 */
 
-
+/* INICIO LOGO BELCORP  */
+.logo_belcorp{
+	position:absolute;
+	left:0px;
+	top:0px;	
+}
+	
+/* FIN LOGO BELCORP */
 
 /*		INICIO ESTILOS INFOGRAFIA		*/
 

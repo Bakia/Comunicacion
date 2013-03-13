@@ -109,9 +109,7 @@ function iniciar(){
 	$("#empezarActividadSopaLetras").cerrarinstrucciones();
 	/**/
 	
-	
-	
-	$("#infografia").botonTexto(arregloBotones,arregloInfo,3,false,false,false);
+	$("#infografia").botonTexto(arregloBotones,arregloInfo,2,false,false,false);
 	$("#texto3info").botonHover(arreglo3info,4,true);
 	
 	$("#actividadEscenario1").botonTexto(arregloBotones,arregloEscenario1,3,true,false,false);
