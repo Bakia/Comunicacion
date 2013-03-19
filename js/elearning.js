@@ -1,6 +1,13 @@
-var currentIndex=0;
+var currentIndex=5;
 
 (function($){
+	
+	/*if ($.browser.msie && $.browser.version > 6 ){
+		preload=false;
+	}else{
+		preload=true;
+	}*/
+	
 	var slides;
 	var opcionesDefecto = {
         onInitComplete: function () {},
@@ -21,21 +28,23 @@ var currentIndex=0;
 		methods.showSeccion(currentIndex);
 		$("#derecha").click(function(e) {		
 			methods.showSeccion(currentIndex+1); 
-			direccion = "der";	
+			direccion = "derecha";
+			
 		});	
 		$("#izquierda").click(function(e) {		
 			methods.showSeccion(currentIndex-1); 
-			direccion = "izq";	
+			direccion = "izquierda";	
 		});
 		
 		$(".siguiente-diapositiva").click(function(e) {		
 			methods.showSeccion(currentIndex+1); 
-			direccion = "der";	
+			direccion = "derecha";
 		});
 		
 		$(".anterior-diapositiva").click(function(e) {		
 			methods.showSeccion(currentIndex-1); 
-			direccion = "izq";	
+			direccion = "izquierda";
+			
 		});	
 		$(".ir-a-diapositiva").click(function(e) {	
 			var dataId = $(this).data("iddediapositiva");
@@ -98,28 +107,53 @@ var currentIndex=0;
 				methods.ordenar();
 			},onCompleteParams:[slides.eq(currentIndex)]
 			});
-		currentIndex=index;
-		
+			
 		
 		/*******/
-		act_showSeccion();
-		/******/
+			act_showSeccion(slides.eq(currentIndex).attr("id"));
+		/******/	
+			
+		currentIndex=index;
 		
 		
 		if (currentIndex < 0) currentIndex = slides.length - 1;
         else if (currentIndex >= slides.length) currentIndex = 0;
 		
 		$(slides.eq(currentIndex)).trigger('empezoanimaciondeentrada', []);
-
+		
+		switch(slides.eq(currentIndex).attr("id")){
+		 	
+			case "actividadMitos":
+			case "inicioComputador":
+			case "primerParteCompu":
+			case "envioCorreoComputador":
+			case "confimarCorreo":
+			
+				$(".logo_belcorp").hide();
+				
+	    	break;
+			
+			default:
+				$(".logo_belcorp").show();
+			break;
+		}
 		
 		
 		TweenLite.to( slides.eq(currentIndex),0.7, {css:{left:0,opacity:1}, ease:Circ.easeInOut, onComplete: function (slide) {
 				$(slide).trigger('terminaranimaciondeentrada', []);
 				var dataAudio = $(slide).data("audio");
-				if(dataAudio != "" && dataAudio !=undefined){
-					stopSong();
-					audios(dataAudio);
-				}
+				
+					if(dataAudio != "" && dataAudio !=undefined){
+						
+						/*stopSong();
+						audios(dataAudio);*/
+						var idSec = slides.eq(currentIndex).attr("id");
+						
+						act_volver(idSec, dataAudio);
+					}
+				
+				
+				
 				methods.ordenar();  
 		
 			},onCompleteParams:[slides.eq(currentIndex)]
